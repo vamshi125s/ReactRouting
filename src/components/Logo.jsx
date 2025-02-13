@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Styles from "./navabr.module.css";
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div className={Styles.logoBlock}>
+        <img src="https://edisonlms-fs.s3.amazonaws.com/tenant_onlinelearning/iidt_logo_137.png" alt="" />
+    </div>
   )
 }
 
