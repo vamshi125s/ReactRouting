@@ -12,8 +12,7 @@ const Menu = () => {
             <li><Link to="/calender">Calender</Link></li>
             <li><Link to="/news">News</Link></li>
             <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
-
+            <li><Link to='/profile'>Profile</Link></li>
         </ul>
     </div>
   )

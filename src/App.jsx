@@ -25,23 +25,35 @@
 //             <Route path='/news' element={<News/>}/>
 //             <Route path='/blog' element={<Blog/>}/>
 //             <Route path='/profile' element={<Profile/>}>
-//               <Route path='/profile/myaccount' element={<MyAccount/>}/>
-//               <Route path='/profile/mysettings' element={<MySettings/>}/>
+//                     <Route path='/profile/myaccount' element={<MyAccount/>}/>
+//                     <Route path='/profile/mysettings' element={<MySettings/>}/>
 //             </Route>
 //             <Route path='*' element={<PageNotFound/>}/>
 //         </Routes>
 //     </BrowserRouter>
 //   )
-// } 
+// }
 
 // export default App
 
-import React from "react"
 
 
+import React from 'react'
+import {BrowserRouter , Routes , Route} from "react-router-dom";
+import Home from './crudcomponents/Home';
+import Create from './crudcomponents/Create';
+import Edit from './crudcomponents/Edit';
+import {ToastContainer} from "react-toastify";
 const App = () => {
   return (
-    <div>App</div>
+    <BrowserRouter>
+    <ToastContainer/>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/edit/:userId' element={<Edit/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
